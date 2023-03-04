@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  /* font-family: [Space Mono]("https://fonts.google.com/specimen/Space+Mono"); */
+  font-weight: 700;
+  font-size: 24px;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-wrapper {
+  background-color: hsl(185, 41%, 84%);
+  /* height: 100vh; */
+}
+.navWrapper {
+  background-color: #282c34;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+.homeIntro {
+  text-align: center;
+}
+.homeIntro h1 {
+  margin-top: 5vh;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.home-body {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+.sec1 {
+  text-align: left;
+}
+.item {
+  box-sizing: border-box;
+  padding: 7px 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}
+.selectedItem {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.disabledItem{
+  cursor: not-allowed;
+  color: gray;
+}
+.sec1 h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.requiredMsg {
+  font-size: 10px;
+  margin-bottom: 15px;
+  color: red;
+}
+.submitBtn {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 15px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  border: 0;
+}
+.sec2 {
+  background-color: hsl(183, 100%, 15%);
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+.icon {
+  font-size: 300px;
+  color: hsl(185, 41%, 84%);
+}
+.name {
+  width: 100%;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  padding: 5px;
+  border-radius: 6px;
+}
+.circularSkeleton {
+  width: 40%;
+  border-radius: 10px;
+  height: 300%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.rectangularSkeleton {
+  border-radius: 6px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.copyright {
+  padding: 10px;
+  color: hsl(183, 100%, 15%);
+  font-size: 10px;
+  text-align: center;
+  padding-top: 100px;
+}
+  
+
+@media screen and (max-width: 992px)  {
+  .home-body {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px)  {
+  .home-body {
+    width: 100%;
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+}
+
+
